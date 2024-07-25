@@ -52,7 +52,7 @@ const GameController = (function() {
 })();
 
 const Gameboard = (function() {
-    const board = Array(9).fill(null); // A 3x3 game board
+    const board = Array(9).fill(null);
 
     const getBoard = () => board;
 
@@ -156,6 +156,6 @@ const Display = (function(){
 document.addEventListener('DOMContentLoaded', () => {
     Display.updateBoard();
     Display.updateCurrentPlayer(GameController.getCurrentPlayer());
-    Display.displayLastWinner(); // Display the last winner when the game starts
-    document.querySelector('.time').style.display = 'none'; // Hide the timer initially
+    Display.displayLastWinner();
+    document.querySelector('.time').style.display = 'none'; 
 });
